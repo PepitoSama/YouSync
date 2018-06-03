@@ -22,10 +22,10 @@ public class D_Context {
 		Properties props = new Properties();
 		
 		// for server
-		try (FileInputStream fis = new FileInputStream("/opt/tomcat-latest/webapps/YouSync/WEB-INF/conf/conf.properties")){
+		//try (FileInputStream fis = new FileInputStream("/opt/tomcat-latest/webapps/YouSync/WEB-INF/conf/conf.properties")){
 		
 		// for local :
-		//try (FileInputStream fis = new FileInputStream("/usr/local/tomcat/webapps/YouSync/conf/conf.properties")){
+		try (FileInputStream fis = new FileInputStream("/usr/local/tomcat/webapps/YouSync/WebContent/WEB-INF/conf/conf.properties")){
 			props.load( fis );
 		}	catch (Exception exception) {
 			System.err.println("/ ! \\ __________ ERROR : Properties file not found");

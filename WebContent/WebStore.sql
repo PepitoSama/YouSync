@@ -27,8 +27,7 @@ CREATE TABLE T_Users (
 --                              Login          Password                                                            Birth Date    Name              Last Name   Email  Connexion number
 INSERT INTO T_Users VALUES (0, 'Pepito'     , '496c0456fa019e0586dcea780bf016b07e636cd78c0853ea6b714140720284c0', '2000-05-26', 'Etienne'       , 'Saimond' , 'a@b.c',0);
 INSERT INTO T_Users VALUES (1, 'Bond'       , '8f8fd9ecdd4abade9e242bbe78dfce031a19b5ae23e5f5fa609a3f17fd17ad0e', '1520-08-12', 'James'         , 'Bond'    , 'a@b.c',0);
-INSERT INTO T_Users VALUES (2, 'JeanMiDu13' , 'c78d17d0c3e00343838f63995bfc7d25c139f9f4711dd83d702f8a4dc9e18590', '1986-11-02', 'Jean Michel'   , 'dutrèze' , 'a@b.c',0);
-INSERT INTO T_Users VALUES (3, 'DylanDu13'  , '5bb11d78f87108b4a8d017e30fc9596cd7ed60c4fda9af0dd2def72385b5781f', '1981-02-28', 'Dylan'         , 'dutrèze' , 'a@b.c',0);
+INSERT INTO T_Users VALUES (2, 'Etienne'    , '8f8fd9ecdd4abade9e242bbe78dfce031a19b5ae23e5f5fa609a3f17fd17ad0e', '1520-08-12', 'Etienne'       , 'Saimond' , 'a@b.c',0);
 
 SELECT * FROM T_Users;
 

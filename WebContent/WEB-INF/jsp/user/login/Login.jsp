@@ -38,9 +38,8 @@
             <img class="youSyncLogo" alt="youSyncLogo" src="img/logo/Logo.png">
 
             <form method="post" class="login">
-                <input id='txtLogin' name='txtLogin' type='text' value='Pepito'
-                    autofocus> <input name='txtPassword' type='password'
-                    value='Pepito'>
+                <input id='txtLogin' name='txtLogin' type='text' value='${login }' autofocus> 
+                <input name='txtPassword' type='password' value='${password }'>
                 <button name='btnConnect' type='submit' id="btnConnect">Login</button>
             </form>
             <div class="errorMessage">${errorMessage}</div>

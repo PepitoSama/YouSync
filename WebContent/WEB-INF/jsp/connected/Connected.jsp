@@ -31,7 +31,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div id="top-navbar-1" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="howItWorks" class="scroll-link"><i class="fa fa-line-chart"></i> Top Download</a></li>
+                        <li><a href="topDownload" class="scroll-link"><i class="fa fa-line-chart"></i> Top Download</a></li>
                      <li><a href="admin" class="scroll-link" id="hiddenAdmin"><i class="fa fa-tachometer"></i> Admin</a></li>
                         <li><a href="logout" class="scroll-link" name = "logout"><i class="fa fa-sign-out"></i> Logout</a></li>
                     </ul>
@@ -76,7 +76,10 @@
                                     <td><c:out value="${playlist.getUrl()}"/></td>
                                     <td><c:out value="${playlist.getLastSync()}"/></td>
                                     <td><button type="submit" class="btnDownloadPlaylist btn"><i class="fa fa-cloud-download"></i></button></td>
-                                    <td><button type="submit" class="btnSyncPlaylist btn"><i class="fa fa-refresh"></i></button></td>
+                                    <form action="download" method="get">
+                                        <td><button type="submit" class="btnSyncPlaylist btn"><i class="fa fa-refresh"></i></button></td>
+                                    </form>
+                                    
                                     <td><button type="submit" class="btnRemPlaylist btn btn-outline-dark"><i class="fa fa-minus-circle" style="color:red"></i></button></td>
                                 </tr>
                             </c:forEach>

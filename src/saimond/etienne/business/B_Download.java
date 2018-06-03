@@ -1,7 +1,3 @@
-/*
- * First try for shell implementation in Java
- */
-
 package saimond.etienne.business;
 
 import java.io.BufferedReader;
@@ -12,7 +8,7 @@ public class B_Download {
 	private static boolean isWindows = System.getProperty("os.name").toLowerCase().startsWith("windows");
 	
 	
-	public void download(String url){
+	public static void download(int idUser, String url){
 		// https://www.youtube.com/watch?v=3EQPsCbmgkk
 		String command = null;
 		
@@ -20,7 +16,7 @@ public class B_Download {
 			// Too bad ...
 		}
 		else {
-			command = "youtube-dl " + url;
+			command = "youtube-dl " + "-o " + idUser + "/  " + url;
 		}
 		
 		System.out.println(B_Download.executeCommand(command));

@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import saimond.etienne.dao.D_Context;
 import saimond.etienne.dao.D_User;
 import saimond.etienne.models.M_User;
 
@@ -103,7 +104,8 @@ public class S_Register extends HttpServlet {
 			
 			Date birth = Date.valueOf(birthDate);
 	        try {
-			D_User.setInfo(login, password, birth, name, lastName, email);
+	        String hashedPass = D_Context.hash(password);
+			D_User.setInfo(login, hashedPass, birth, name, lastName, email);
 			} catch (SQLException e) {
 				result = "";
 				resError = "Failed to add in DB";
