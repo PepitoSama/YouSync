@@ -1,3 +1,3 @@
 # YouSync
-Default Login ;
+Default Login :
 Pepito / Pepito
